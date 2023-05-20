@@ -3,7 +3,7 @@ package com.example.application.views;
 
 import com.example.application.components.appnav.AppNav;
 import com.example.application.components.appnav.AppNavItem;
-import com.example.application.views.about.AboutView;
+import com.example.application.views.get.GetData;
 import com.example.application.views.tourist_club.Tourist_clubView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -54,8 +54,9 @@ public class MainLayout extends AppLayout {
         // For documentation, visit https://github.com/vaadin/vcf-nav#readme
         AppNav nav = new AppNav();
 
-        nav.addItem(new AppNavItem("Tourist_club", Tourist_clubView.class, LineAwesomeIcon.SPIDER_SOLID.create()));
-        nav.addItem(new AppNavItem("About", AboutView.class, LineAwesomeIcon.FILE.create()));
+        nav.addItem(new AppNavItem("Просмотр и редактирование", Tourist_clubView.class, LineAwesomeIcon.SPIDER_SOLID.create()));
+        nav.addItem(new AppNavItem("Получить данные", GetData.class, LineAwesomeIcon.SPIDER_SOLID.create()));
+
 
         return nav;
     }
